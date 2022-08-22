@@ -1,0 +1,20 @@
+<ng-container >
+  <mat-card>
+    <mat-card-title>
+      <h1>Login</h1>
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Your Email</mat-label>
+          <input matInput type="email" placeholder="User Name"[(ngModel)]="email">
+          <mat-hint>Mail Or UserName</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Your Password</mat-label>
+          <input matInput type="password" placeholder="Password"[(ngModel)]="password" >
+          <mat-hint>Min 8 chart</mat-hint>
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-button color="primary" (click)="login()">Login</button>
+  </mat-card>
+</ng-container>
